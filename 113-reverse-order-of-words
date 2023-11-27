@@ -1,0 +1,21 @@
+public String reverseWordsInASentence(String sentence){
+    //your flawless code here
+        List<String> palabras= sentence.split(' ');
+        Integer nPalabras = palabras.size();
+        List<String> palabrasReverse = new List<String>();
+
+        for (Integer i = nPalabras; i > 0;  i--){
+            palabrasReverse.add(palabras[i-1]);
+        }
+        palabrasReverse[0] = palabrasReverse[0].capitalize();
+        palabrasReverse[nPalabras-1] = palabrasReverse[nPalabras-1].toLowerCase();
+        system.debug(palabrasReverse);
+        //String frase = String.join(palabrasReverse,' ');
+        String frase = '';
+        for (String palabra : palabrasReverse){
+            frase = frase + palabra + ' ';
+        }
+        
+        system.debug('frase: ' + frase);
+        return frase;
+}
