@@ -1,6 +1,6 @@
 public String nameFromEmail(String email) {
     //code here
-     
+
     List <String> nombreResto = email.split('\\.');
     String nombre = nombreResto[0].toLowerCase().capitalize();
     List <String> ApellidoResto = nombreResto[1].split('\\@');
@@ -8,8 +8,5 @@ public String nameFromEmail(String email) {
     system.debug('nombre: ' + nombre);
     system.debug('apellido: ' +apellido);
     return nombre + ' ' + apellido;
-    
-
-}  
     
 }
