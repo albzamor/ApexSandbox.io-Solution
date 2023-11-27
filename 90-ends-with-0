@@ -1,0 +1,8 @@
+public Boolean isEndWithZero(Integer num){
+     //integer tam = num.size();
+
+if (Math.mod(num,10) == 0)
+    return true;
+else 
+    return false;
+}
