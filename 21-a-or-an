@@ -1,0 +1,11 @@
+public String aOrAn(String word) {
+    //code here
+    String prep;
+    String frase;
+    if (word.startsWith('a')|| word.startsWith('e')|| word.startsWith('i')|| word.startsWith('o')|| word.startsWith('u'))
+        prep = 'an ';
+    else
+        prep = 'a ';
+    frase = prep + word;
+    return frase;
+}
