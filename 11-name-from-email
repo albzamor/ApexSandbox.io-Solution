@@ -1,12 +1,18 @@
 public String nameFromEmail(String email) {
     //code here
+    public static String nameFromEmail(String email) {
+    //code here
+    //String posDot = email.index_off('.');
+    
     List <String> nombreResto = email.split('\\.');
-    String nombre = nombreResto[0];
+    String nombre = nombreResto[0].toLowerCase().capitalize();
     List <String> ApellidoResto = nombreResto[1].split('\\@');
-    String apellido = ApellidoResto[0];
+    String apellido = ApellidoResto[0].toLowerCase().capitalize();
     system.debug('nombre: ' + nombre);
     system.debug('apellido: ' +apellido);
+    return nombre + ' ' + apellido;
     
-    return nombre.toLowerCase.Capitalice;
+
+}  
     
 }
