@@ -7,8 +7,8 @@ public String reverseWordsInASentence(String sentence){
         for (Integer i = nPalabras; i > 0;  i--){
             palabrasReverse.add(palabras[i-1]);
         }
-        palabrasReverse[0] = palabrasReverse[0].capitalize();
-        palabrasReverse[nPalabras-1] = palabrasReverse[nPalabras-1].toLowerCase();
+        palabrasReverse[0] = palabrasReverse[0];
+        palabrasReverse[nPalabras-1] = palabrasReverse[nPalabras-1];
         system.debug(palabrasReverse);
         //String frase = String.join(palabrasReverse,' ');
         String frase = '';
