@@ -17,6 +17,7 @@ public String reverseWordsInASentence(String sentence){
         for (String palabra : palabrasReverse){
             frase = frase + palabra + ' ';
         }
+        frase.normalizeSpace()
         
         system.debug('frase: ' + frase);
         return frase;
