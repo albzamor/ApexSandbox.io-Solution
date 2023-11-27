@@ -1,0 +1,8 @@
+public Boolean sumEquals(Integer a, Integer b, Integer c) {
+    //code here
+    integer result;
+    result = a + b;
+    if (result == c)
+        return true;
+    return false;
+}
