@@ -1,9 +1,6 @@
 public String nameFromEmail(String email) {
     //code here
-    public static String nameFromEmail(String email) {
-    //code here
-    //String posDot = email.index_off('.');
-    
+     
     List <String> nombreResto = email.split('\\.');
     String nombre = nombreResto[0].toLowerCase().capitalize();
     List <String> ApellidoResto = nombreResto[1].split('\\@');
