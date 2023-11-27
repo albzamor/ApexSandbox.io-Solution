@@ -17,7 +17,7 @@ public String reverseWordsInASentence(String sentence){
         for (String palabra : palabrasReverse){
             frase = frase + palabra + ' ';
         }
-        frase.removeEnd(' ');
+        frase.removeEnd('// ');
         
         system.debug('frase: ' + 'FINAL');
         return frase + 'FINAL';
