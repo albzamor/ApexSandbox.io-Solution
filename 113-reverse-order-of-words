@@ -19,6 +19,6 @@ public String reverseWordsInASentence(String sentence){
         }
         frase.removeEnd(' ');
         
-        system.debug('frase: ' + frase);
+        system.debug('frase: ' + 'FINAL');
         return frase;
 }
