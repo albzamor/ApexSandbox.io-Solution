@@ -1,0 +1,17 @@
+public Boolean isPassed(Boolean passedExam, Boolean passedAssignments, Boolean passedProject) {
+    
+    integer goal = 0;
+    if(passedExam)
+        goal ++;
+    if(passedAssignments)
+        goal++;
+    if(passedProject)
+        goal ++;
+ 
+    if (goal >=2)
+        return true;
+    return false;
+
+
+
+}
