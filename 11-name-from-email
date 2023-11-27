@@ -6,8 +6,7 @@ public String nameFromEmail(String email) {
     String apellido = ApellidoResto[0];
     system.debug('nombre: ' + nombre);
     system.debug('apellido: ' +apellido);
-    String toLower = nombre.capitalize() + ' ' + apellido.capitalize();
-    tolower = toLower.capitalize(toLower);
-    return toLower.capitalize();
+    
+    return nombre.toLowerCase.Capitalice;
     
 }
