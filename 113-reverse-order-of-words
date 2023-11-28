@@ -14,7 +14,7 @@ public String reverseWordsInASentence(String sentence){
         system.debug(palabrasReverse);
         //String frase = String.join(palabrasReverse,' ');
         String frase = '';
-        for (Integer i = palabrasReverse.size(); i>0; i--{
+        for (Integer i = palabrasReverse.size(); i>0; i--){
             if (i == 1)
                 frase = frase + palabra;
             else
