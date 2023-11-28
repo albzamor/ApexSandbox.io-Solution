@@ -15,10 +15,12 @@ public String reverseWordsInASentence(String sentence){
         //String frase = String.join(palabrasReverse,' ');
         String frase = '';
         for (String palabra : palabrasReverse){
-            frase = frase + palabra + ' ';
+            if i = 1
+                frase = frase + palabra;
+            else
+                frase = frase + palabra + ' ';
         }
-        frase.removeEnd('The ');
         
         system.debug('frase: ' + 'FINAL');
-        return frase + 'FINAL';
+        return frase;
 }
