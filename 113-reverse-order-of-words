@@ -14,11 +14,11 @@ public String reverseWordsInASentence(String sentence){
         system.debug(palabrasReverse);
         //String frase = String.join(palabrasReverse,' ');
         String frase = '';
-        for (Integer i = palabrasReverse.size(); i>0; i--){
-            if (i == 1)
-                frase = frase + palabrasReverse[i-1];
+        for (Integer i = 0; i < palabrasReverse.size(); i++){
+            if (i == palabrasReverse.size() -1)
+                frase = frase + palabrasReverse[i];
             else
-                frase = frase + palabrasReverse[i-1] + ' ';
+                frase = frase + palabrasReverse[i] + ' ';
         }
         
         system.debug('frase: ' + 'FINAL');
