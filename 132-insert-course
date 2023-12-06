@@ -1,11 +1,11 @@
 public Id insertCourse(String name, String details, Integer credits) {
-    // code here
-    if (apxio__Credits__c != 1 && apxio__Credits__c != 2  apxio__Credits__c != 3 && apxio__Credits__c != 4)
-        return null;
-    apxio__Course__c nuevoCurso = new apxio__Course__c();
-    apxio__Course__c.name = name;
-    apxio__Course__c.apxio__Course_Details__c = details;
-    apxio__Course__c.apxio__Credits__c = credits;
-    insert nuevoCurso;
-    return apxio__Course__c.Id;
-}
+            // code here
+            if (details != '1' && details != '2' && details != '3' &&  details != '4')
+                return null;
+            apxio__Course__c nuevoCurso = new apxio__Course__c();
+            nuevoCurso.Name = name;
+            nuevoCurso.apxio__Course_Details__c = details;
+            nuevoCurso.apxio__Credits__c = credits.format();
+            insert nuevoCurso;
+            return nuevoCurso.Id;
+        }
