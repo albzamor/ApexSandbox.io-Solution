@@ -1,26 +1,18 @@
 public Id insertCourse(String name, String details, Integer credits) {
-  // code here
 
-    apxio__Course__c course =  new apxio__Course__c();
 
-    course.Name = name;
 
-    course.apxio__Course_Details__c  = details;
 
-    course.apxio__Credits__c  = String.valueOf(credits);
+    apxio__Student__c student = new apxio__Student__c (
 
-    if(credits<=4){
+         Name = name ,
 
-        insert course;
+         apxio__Phone__c = phone,
 
-    }
+         apxio__Email__c = email
 
-    else{
+         ); 
 
-        return null;
+    insert student;
 
-    }
-
-    return course.Id;
-
-}
+    return [SELECT apxio__Registration_Number__c FROM apxio__Student__c WHERE Id =: student.Id]?.apxio__Registration_Number__c;
