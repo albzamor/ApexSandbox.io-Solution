@@ -12,5 +12,3 @@ public Id insertCourse(String name, String details, Integer credits) {
             system.debug('credits: ' + nuevoCurso.apxio__Credits__c);
             return nuevoCurso.Id;
         }
-
-}
