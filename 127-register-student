@@ -9,3 +9,4 @@ public String registerStudent(String name, String phone, String email) {
     apxio__Student__c est = [Select id,apxio__Registration_Number__c from apxio__Student__c where apxio__Email__c = :email];
     string RegistrationNumber = est.apxio__Registration_Number__c;
     return RegistrationNumber;
+}
