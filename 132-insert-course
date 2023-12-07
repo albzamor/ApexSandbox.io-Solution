@@ -1,15 +1,26 @@
 public Id insertCourse(String name, String details, Integer credits) {
+  // code here
 
-if(credits >= 1 && credits <= 4)    
+    apxio__Course__c course =  new apxio__Course__c();
 
-{apxio__Course__c apCourse = new apxio__Course__c();     
+    course.Name = name;
 
-apCourse.Name = name;      
+    course.apxio__Course_Details__c  = details;
 
-apCourse.apxio__Course_Details__c = details;     
+    course.apxio__Credits__c  = String.valueOf(credits);
 
-apCourse.apxio__Credits__c = String.valueof(credits);     
+    if(credits<=4){
 
-insert apCourse;        
+        insert course;
 
-return apCourse.id;    }    return null;}
+    }
+
+    else{
+
+        return null;
+
+    }
+
+    return course.Id;
+
+}
