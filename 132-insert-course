@@ -16,3 +16,4 @@ public Id insertCourse(String name, String details, Integer credits) {
     insert student;
 
     return [SELECT apxio__Registration_Number__c FROM apxio__Student__c WHERE Id =: student.Id]?.apxio__Registration_Number__c;
+}
