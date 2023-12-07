@@ -6,6 +6,6 @@ public Id insertCourse(String name, String details, Integer credits) {
     nuevoCurso.apxio__Course_Details__c = details;
     nuevoCurso.apxio__Credits__c = String.valueOf(credits);
     insert nuevoCurso;
-    List<apxio__Course__c> courses = [SELECT Id, Name, apxio__Course_Details__c, apxio__Credits__c FROM apxio__Course__c WHERE Name = 'name'];
+    //List<apxio__Course__c> courses = [SELECT Id, Name, apxio__Course_Details__c, apxio__Credits__c FROM apxio__Course__c WHERE Name = 'name'];
     return courses[0]?.Id;
 }
