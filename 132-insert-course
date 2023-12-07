@@ -1,14 +1,14 @@
 public Id insertCourse(String name, String details, Integer credits) {
             // code here
-            if (details != '1' && details != '2' && details != '3' &&  details != '4')
-                return null;
-            apxio__Course__c nuevoCurso = new apxio__Course__c();
-            nuevoCurso.name = name;
-            nuevoCurso.apxio__Course_Details__c = details;
-            nuevoCurso.apxio__Credits__c = String.valueOf(credits);
-            insert nuevoCurso;
-            system.debug('nombre: ' + nuevoCurso.name);
-            system.debug('details: ' + nuevoCurso.apxio__Course_Details__c);
-            system.debug('credits: ' + nuevoCurso.apxio__Credits__c);
-            return nuevoCurso.Id;
-        }
+    if (details != '1' && details != '2' && details != '3' &&  details != '4')
+        return null;
+    apxio__Course__c nuevoCurso = new apxio__Course__c();
+    nuevoCurso.name = name;
+    nuevoCurso.apxio__Course_Details__c = details;
+    nuevoCurso.apxio__Credits__c = String.valueOf(credits);
+    insert nuevoCurso;
+    system.debug('nombre: ' + nuevoCurso.name);
+    system.debug('details: ' + nuevoCurso.apxio__Course_Details__c);
+    system.debug('credits: ' + nuevoCurso.apxio__Credits__c);
+    return nuevoCurso.Id;
+}
