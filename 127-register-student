@@ -7,3 +7,4 @@ public String registerStudent(String name, String phone, String email) {
     insert estudiante;
     string RegistrationNumber = [Select id,apxio__Registration_Number__c from apxio__Student__c where apxio__Email__c = email];
     return RegistrationNumber;
+}
