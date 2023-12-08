@@ -5,7 +5,7 @@ public void createCourseAndClass(String name, String description) {
     curso.apxio__Course_Details__c = description;
     insert curso;
 
-    apxio__Class__c clase =  new apxio__Class__c clase();
+    apxio__Class__c clase =  new apxio__Class__c();
     clase.apxio__Course__c = curso.Id;
     if(description.Length() > 255)
         description = description.left(255);
