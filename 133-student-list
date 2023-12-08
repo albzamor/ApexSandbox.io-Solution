@@ -2,7 +2,7 @@ public void insertStudents(List<String> studentNames, List<String> studentEmails
     // code here
     List<apxio__Student__c> studiantesCompletos = new apxio__Student__c();
     integer i = 0;
-    for (student: studentNames){
+    for (apxio__Student__c student: studentNames){
         String Nombre = studentNames[i];
         String Email = studentEmails[i];
 
