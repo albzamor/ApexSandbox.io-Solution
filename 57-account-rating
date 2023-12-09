@@ -1,6 +1,6 @@
 public void setAccountRating(Account a) {
     //code here
-    if (a.id){
+    if (a.id != null){
     if (a.AnnualRevenue <= 100000)
         a.Rating = 'Cold';
     else if (a.AnnualRevenue > 100000 && a.AnnualRevenue <= 500000)
