@@ -9,7 +9,6 @@ public void setAccountRating(Account a) {
         a.Rating = 'Hot';
     if (a.id != null)
         update a;
-    else insert a;
     system.debug('a.Rating: ' + a.Rating);
     
     
