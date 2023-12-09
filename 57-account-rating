@@ -12,5 +12,3 @@ public void setAccountRating(Account a) {
 
 }
 
-
-}
