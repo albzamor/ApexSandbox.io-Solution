@@ -3,11 +3,10 @@ public void enrollStudents(List<String> emails, String className) {
     list <apxio__Class_Enrollment__c> enrolos = new list <apxio__Class_Enrollment__c>();
     list <apxio__Class__c> clasen = new list <apxio__Class__c>();
     clasen = [select id from apxio__Class__c where name = :className];
-    List<apxio__Student__c> estus = [select id, apxio__Email__c,  from apxio__Student__c where apxio__Email__c IN  :emal];
+    List<apxio__Student__c> estus = [select id, apxio__Email__c,  from apxio__Student__c where apxio__Email__c IN  :emails];
     
     for (apxio__Student__c studiante :estus )
     {
-        
         apxio__Class_Enrollment__c enrol = new apxio__Class_Enrollment__c();
         enrol.apxio__Student__c =estudiante.Id;
         enrol.apxio__Offered_Class__c = clasen[0].Id;
