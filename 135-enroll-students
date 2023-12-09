@@ -1,10 +1,13 @@
 public void enrollStudents(List<String> emails, String className) {
     // code here
+    list <Enrollment__c> enrolos = new list <Enrollment__c>();
     for (String emal :emails )
     {
         id idStudent = [select id from apxio__Student__c where apxio__Email__c = emal];
         apxio__Class_Enrollment__c enrol = new apxio__Class_Enrollment__c();
         enrol.apxio__Student__c =idStudent;
         enrol.apxio__Offered_Class__c = className;
+        enrolos.ad(enrol);
     }
+    insert enrolos;
 }
