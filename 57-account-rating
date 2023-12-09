@@ -1,13 +1,15 @@
 public void setAccountRating(Account a) {
      //code here
-     if (a.id != null){
+ 
     if (a.AnnualRevenue <= 100000)
         a.Rating = 'Cold';
     else if (a.AnnualRevenue > 100000 && a.AnnualRevenue <= 500000)
         a.Rating = 'Warm';
     else if (a.AnnualRevenue > 500000)
         a.Rating = 'Hot';
-    update a;
+    if (a.id != null){
+        update a;
+    ese insert a;
     system.debug('a.Rating: ' + a.Rating);
      }
     
