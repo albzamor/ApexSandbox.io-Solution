@@ -4,7 +4,7 @@ public void enrollStudents(List<String> emails, String className) {
     {
         id idStudent = [select id from apxio__Student__c where apxio__Email__c = emal];
         apxio__Class_Enrollment__c enrol = new apxio__Class_Enrollment__c();
-        apxio__Class_Enrollment__c.apxio__Student__c =idStudent;
-        apxio__Class_Enrollment__c.apxio__Offered_Class__c = className;
+        enrol.apxio__Student__c =idStudent;
+        enrol.apxio__Offered_Class__c = className;
     }
 }
