@@ -6,6 +6,8 @@ public void setParent(Account acc, Contact con, Opportunity opp) {
     }
     if (con != null && con.Id != null)
         update con;
+    else insert con;
     if (opp != null && opp.Id != null)
-    update opp;
+        update opp;
+    else insert opp;
 }
