@@ -1,10 +1,10 @@
 public Boolean isKeyAccount(Account a) {
     //code here
-    if (a1.AnnualRevenue >= 600000 && a1.Industry = 'Banking')
+    if (a1.AnnualRevenue >= 600000 && a1.Industry == 'Banking')
         return true;
-    if (a1.AnnualRevenue >= 800000 && a1.Industry = 'Technology')
+    if (a1.AnnualRevenue >= 800000 && a1.Industry == 'Technology')
         return true;
-    if (a1.AnnualRevenue >= 600000 && a1.Industry = 'Retail')
+    if (a1.AnnualRevenue >= 600000 && a1.Industry == 'Retail')
         return true;
     if (a1.AnnualRevenue > 500000)
         return true;
