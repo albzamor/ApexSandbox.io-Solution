@@ -7,6 +7,6 @@ public void escalateIfMeetsCriteria(Case c) {
                 Update c;
             else insert c;
         }
-    }
+    
 
 }
