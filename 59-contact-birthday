@@ -6,6 +6,6 @@ public Boolean isBirthday(Contact c) {
     
     If (c.Birthdate.month() == mesHoy && c.Birthdate.day() == diaHoy)
         return true;
-    false;
+    return false;
 
 }
