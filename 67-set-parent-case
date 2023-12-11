@@ -1,11 +1,13 @@
 public void linkParent(Case c1, Case c2) {
     //code here
-    if (c1 != null && c2 != null && c1.Id !=  && c2.Id != null  && c1.ContactId != null && c2.ContactId != null){
+    if (c1.ContactId != null && c2.ContactId != null){
         if (c1.ContactId == c2.ContactId){
             if (c1.createdDate<c2.createdDate)
-                c2.ParentId = c1.Id;
+                if (c1.Id != null)
+                    c2.ParentId = c1.Id;
             if (c2.createdDate>c1.createdDate)
-                c1.ParentId = c2.Id;
+                if (c2.Id != null)
+                    c1.ParentId = c2.Id;
         }
     }
 }
