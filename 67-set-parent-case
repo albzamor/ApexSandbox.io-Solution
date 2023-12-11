@@ -5,7 +5,7 @@ public void linkParent(Case c1, Case c2) {
             if (c1.createdDate<c2.createdDate)
                 if (c1.Id != null)
                     c2.ParentId = c1.Id;
-            else (c2.createdDate>c1.createdDate)
+            if (c2.createdDate<c1.createdDate)
                 if (c2.Id != null)
                     c1.ParentId = c2.Id;
         }
