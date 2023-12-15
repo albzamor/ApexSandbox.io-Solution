@@ -1,0 +1,8 @@
+public List<Integer> evenNumbers(Integer n) {
+    //code here
+    List<Integer> listnum = new List<Integer>();
+    for (integer num; num <= n, num++){
+        if (num.mod == 0)
+            listnum.add(num;)
+    }
+}
