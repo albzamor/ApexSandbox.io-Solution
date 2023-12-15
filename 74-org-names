@@ -5,7 +5,7 @@ public List<String> orgNames(List<String> adjectives, List<String> animals) {
     for (String ani : animals){
         for (String adj : adjectives)
         {
-            result.add(adj + ' ' + ani);
+            result.add(adj + '-' + ani);
         }
 
     }
