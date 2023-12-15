@@ -3,9 +3,9 @@ public Integer maxConsecutiveOnes(Integer[] numbers) {
     Integer a = 0;
     Integer Max = 0;
     if (numbers.size())>0{
-        for (Integer num: numbers)
+        for (Integer num : numbers)
         {
-            if (num = 1){
+            if (num == 1){
                 a++;
             }
             if (a > Max)
