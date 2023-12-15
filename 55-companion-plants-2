@@ -1,9 +1,9 @@
 public Boolean companionPlants(List<String> plants) {
     for (Integer i = 1; i < plants.size()-1; i++)
     {
-        if (plantas[i] == 'lettuce' && (plantas[i+1] != 'cucumbers' || plantas[i+1] != 'onions'))
+        if (plants[i] == 'lettuce' && (plantas[i+1] != 'cucumbers' || plantas[i+1] != 'onions'))
             return false;
-        if (plantas[i] == 'onions' && (plantas[i+1] != 'carrots' || plantas[i+1] != 'tomatoes'))
+        if (plants[i] == 'onions' && (plantas[i+1] != 'carrots' || plantas[i+1] != 'tomatoes'))
             return false;
         i++;
     }
