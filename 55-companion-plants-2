@@ -5,6 +5,9 @@ public Boolean companionPlants(List<String> plants) {
             return false;
         if (plants[i] == 'onions' && (plants[i+1] != 'carrots' || plants[i+1] != 'tomatoes'))
             return false;
+        if (plants[i] == 'tomatoes' && (plants[i+1] != 'onios') 
+            return false;
+
         i++;
     }
     return true;
