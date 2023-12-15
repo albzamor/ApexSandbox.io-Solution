@@ -10,10 +10,9 @@ public Integer maxConsecutiveOnes(Integer[] numbers) {
             }
             if (a > Max)
                 Max = a;
+            a= 0;
         }
         return Max;
-
-
 
     }
 }
