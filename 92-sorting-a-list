@@ -1,7 +1,7 @@
 public List<String> getNamesInAscOrder(List<String> accountNames)
 {
     //code here
-    if (accountNames == null)
+    if (!accountNames)
         return null;
     if (accountNames.size()>0)
     {
