@@ -10,5 +10,5 @@ public boolean isSorted(List<Integer> numbers) {
     }
     if (a == numbers.size())
         return true;
-    false;
+    return false;
 }
