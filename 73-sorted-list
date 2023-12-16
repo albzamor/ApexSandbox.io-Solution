@@ -10,6 +10,8 @@ public boolean isSorted(List<Integer> numbers) {
             a++;
         while (numbers[i+1] < numbers[i])
             a++;
+        while (numbers[i+1] == numbers[i])
+            a++;
     }
     if (a == size)
         return true;
