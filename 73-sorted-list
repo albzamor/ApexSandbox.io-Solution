@@ -1,6 +1,8 @@
 public boolean isSorted(List<Integer> numbers) {
     //code here
     integer a = 0;
+    integer b = 0;
+    integer c = 0;
     if (numbers.size()==1)
         return true;
     integer size = numbers.size();
@@ -9,11 +11,11 @@ public boolean isSorted(List<Integer> numbers) {
         if (numbers[i+1] > numbers[i])
             a++;
         else if (numbers[i+1] < numbers[i])
-            a++;
+            b++;
         else if (numbers[i+1] == numbers[i])
-            a++;
+            c++;
     }
-    if (a == size)
+    if (a == size | b == size |c == size)
         return true;
     return false;
 }
