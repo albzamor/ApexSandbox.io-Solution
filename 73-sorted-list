@@ -1,12 +1,11 @@
 public boolean isSorted(List<Integer> numbers) {
     //code here
-    integer muestra;
     integer a = 0;
     for (Integer i = 0; i<numbers.size()-1;i++){
         
-        while numbers[i+1] > number[i]
+        while (numbers[i+1] > number[i])
             a++;
-        while numbers[i+1] < number[i]
+        while (numbers[i+1] < number[i])
             a++;
     }
     if (a = numbers.size())
