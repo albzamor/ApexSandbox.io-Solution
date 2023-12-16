@@ -3,9 +3,10 @@ public boolean isSorted(List<Integer> numbers) {
     integer a = 1;
     integer b = 1;
     integer c = 1;
-    if (numbers.size()==1)
-        return true;
     integer size = numbers.size();
+    if (numbers.size()==1 || size == 0)
+        return true;
+    
     for (Integer i = 0; i<size-1;i++){
         
         if (numbers[i+1] > numbers[i])
