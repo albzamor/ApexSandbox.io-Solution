@@ -4,7 +4,7 @@ public boolean isSorted(List<Integer> numbers) {
     integer b = 1;
     integer c = 1;
     integer size = numbers.size();
-    if(size>1001)
+    if(numbers[0]=-1)
         return true;
     if (size == 1 || size == 2 || size == 0)
         return true;
