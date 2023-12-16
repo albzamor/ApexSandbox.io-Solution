@@ -1,8 +1,8 @@
 public boolean isSorted(List<Integer> numbers) {
     //code here
-    integer a = 1;
-    integer b = 1;
-    integer c = 1;
+    integer a = 2;
+    integer b = 2;
+    integer c = 2;
     if (numbers.size()==1)
         return true;
     integer size = numbers.size();
